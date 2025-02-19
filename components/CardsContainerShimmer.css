@@ -1,0 +1,16 @@
+.shimmer-card {
+  background-color: #ccc;
+  animation: blink 2s 0s infinite linear;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

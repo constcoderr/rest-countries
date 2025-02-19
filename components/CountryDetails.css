@@ -1,0 +1,150 @@
+.btn-container {
+  padding-block: 1.5rem;
+  background-color: var(--very-light-gray);
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0px 0px 8px 0px #00000014;
+  border: none;
+  color: var(--very-dark-blue);
+  background-color: var(--white);
+  padding: 8px 32px;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.back-btn:hover {
+  box-shadow: 2px 2px 8px 0px #00000036;
+  cursor: pointer;
+}
+
+.btn-container.dark {
+  --very-light-gray: hsl(207, 26%, 17%);
+  --white: hsl(209, 23%, 22%);
+  --light-black: hsla(0, 0%, 100%, 0.438);
+  --very-dark-blue: hsl(0, 0%, 100%);
+}
+
+.frame {
+  height: 350px;
+  width: 500px;
+  max-height: 350px;
+  max-width: 500px;
+}
+
+.frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.country-details-wrapper {
+  min-height: 100vh;
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.border-countries-wrapper {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.border-countries-wrapper .btns-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.border-countries-wrapper .btns-container button {
+  font-size: 16px;
+  padding: 4px 12px;
+  color: var(--light-black);
+}
+
+.country-details-container p {
+  margin-block: 6px;
+}
+
+.country-details-container p span {
+  color: var(--light-black);
+  margin-left: 5px;
+}
+
+.country-name {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 48px;
+}
+
+.paras-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rem;
+  margin-bottom: 48px;
+}
+
+.btns-container .border-btn {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 4px 12px;
+  color: var(--light-black);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0px 0px 8px 0px #00000014;
+  border: none;
+  background-color: var(--white);
+  border-radius: 4px;
+}
+
+.btns-container a:hover {
+  box-shadow: 2px 2px 8px 0px #00000036;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .country-details-wrapper {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .country-details-wrapper {
+    padding-top: 0rem;
+  }
+
+  .frame {
+    height: 200px;
+  }
+
+  .frame img {
+    object-fit: contain;
+  }
+
+  .country-name {
+    margin-bottom: 16px;
+  }
+
+  .paras-wrapper {
+    gap: 0rem;
+    margin-bottom: 20px;
+  }
+
+  .paras-wrapper span:nth-child(2) {
+    margin-top: -4px;
+  }
+
+  .border-countries-wrapper {
+    gap: 0.5rem;
+  }
+}
